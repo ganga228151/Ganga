@@ -5,12 +5,20 @@ import image from "/Ramtempal.jpg";
 import image1 from "/Animal.jpg";
 import image2 from "/Tajmahal.jpg";
 import image3 from "/ram.png";
+import image4 from "/Land img.jpg";
+import image5 from "/Land img2.jpg";
+import image6 from "/Landimg3.jpg";
+import image7 from "/Landimg4.jpg";
 
 const highResImages = {
   'bora-bora': image,
   'poppy-field': image1,
   'bagan': image2,
   'Ganga': image3,
+  'Land1': image4,
+  'Land2': image5,
+  'Land3': image6,
+  'Land4': image7,
 };
 
 export default function View360Page() {

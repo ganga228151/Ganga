@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import image from "/ram.png"
 import GalleryPage from "./GalleryPage";
-export default function AirPano360Page() {
+export default function Homepage() {
     useEffect(() => {
         const script = document.createElement("script");
         script.src = "https://aframe.io/releases/1.3.0/aframe.min.js";
@@ -25,7 +25,7 @@ export default function AirPano360Page() {
                
 
                 <div className="mt-20 text-center">
-                    <h2 className="text-3xl font-bold mb-2">A virtual journey around the world</h2>
+                    <h2 className="text-3xl font-bold mb-2">A virtual journey around the Ram tempal</h2>
                     <div className="flex items-center justify-center mt-4">
                         <input
                             type="text"

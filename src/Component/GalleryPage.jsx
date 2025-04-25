@@ -4,6 +4,10 @@ import image from "/Ramtempal.jpg";
 import image1 from "/Animal.jpg";
 import image2 from "/Tajmahal.jpg";
 import image3 from "/ram.png";
+import image4 from "/Land img.jpg";
+import image5 from "/Land img2.jpg";
+import image6 from "/Landimg3.jpg";
+import image7 from "/Landimg4.jpg";
 
 const images = [
   {
@@ -13,18 +17,38 @@ const images = [
   },
   {
     imageId: 'poppy-field',
-    title: 'Over the Field',
+    title: 'Animal in the Field',
     thumbnail: image1,
   },
   {
     imageId: 'bagan',
-    title: 'Bagan, Myanmar',
+    title: 'Tajmahal',
     thumbnail: image2,
   },
   {
     imageId: 'Ganga',
-    title: 'Bagan, Myanmar',
+    title: 'Ram ji Tempal',
     thumbnail: image3,
+  },
+  {
+    imageId: 'Land1',
+    title: 'img1',
+    thumbnail: image4,
+  },
+  {
+    imageId: 'Land2',
+    title: 'img2',
+    thumbnail: image5,
+  },
+  {
+    imageId: 'Land3',
+    title: 'img3',
+    thumbnail: image6,
+  },
+  {
+    imageId: 'Land4',
+    title: 'img4',
+    thumbnail: image7,
   },
 ];
 
