@@ -36,7 +36,7 @@ const Footer = () => {
     {/* Contact */}
     <div id="contact">
       <h2 className="text-2xl font-bold mb-4 text-blue-600">Contact</h2>
-      <ul className="space-y-4 text-base pl-2">
+      <ul className="space-y-4 text-gray-600 pl-2">
         <li><strong>📧 Email:</strong> <a href="mailto:ganga228151@bbdu.ac.in" className="text-blue-600 underline">ganga228151@bbdu.ac.in</a></li>
         <li><strong>📞 Phone:</strong> 6392386790</li>
         <li><strong>📍 Location:</strong> Lucknow, India</li>
@@ -48,23 +48,24 @@ const Footer = () => {
 
 
         {/* Right - Socials */}
-        <div className="flex space-x-3 text-lg ">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-            <FaGithub />
-          </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-            <FaLinkedin />
-          </a>
-          <a href="/" className="hover:text-blue-500">
-            <FaGlobe />
-          </a>
-        </div>
+      
       </div>
 
       {/* Bottom - Copyright */}
       <div className="text-center text-xs text-gray-400 mt-4">
         © {new Date().getFullYear()} Ganga Prasad Yadav. All rights reserved.
       </div>
+      <div className="flex  items-center justify-center mx-auto mt-4 space-x-3 text-lg ">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 bg-gray-700">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 bg-gray-700">
+            <FaLinkedin />
+          </a>
+          <a href="/" className="hover:text-blue-500 bg-gray-700">
+            <FaGlobe />
+          </a>
+        </div>
     </footer>
   );
 };

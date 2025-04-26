@@ -8,6 +8,8 @@ import image4 from "/Land img.jpg";
 import image5 from "/Land img2.jpg";
 import image6 from "/Landimg3.jpg";
 import image7 from "/Landimg4.jpg";
+import { useContext } from 'react';
+import { SearchContext } from '../context/Searchcontext';
 
 const images = [
   {
@@ -53,12 +55,25 @@ const images = [
 ];
 
 export default function GalleryPage() {
+
+  const { searchTerm, setIsFeched } = useContext(SearchContext);
+
+  const filteredImage = searchTerm
+    ? images.filter((image) =>
+      Object.entries(image).some(([key, value]) =>
+        String(value).toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    )
+    : images;
+
+  setIsFeched(!!filteredImage)
+
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <h1 className="text-3xl font-bold mb-6 text-center">360° Photo Gallery</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {images.map(({ imageId, title, thumbnail }) => (
+        {filteredImage.length > 0 ? filteredImage.map(({ imageId, title, thumbnail }) => (
           <Link
             to={`/view/${imageId}`}
             key={imageId}
@@ -76,7 +91,9 @@ export default function GalleryPage() {
               {title}
             </div>
           </Link>
-        ))}
+        )) : <div className='flex items-center justify-center mx-auto'>
+          <p className='text-center p-5 text-black font-bold'>Nothing to show</p></div>}
+
       </div>
     </div>
   );

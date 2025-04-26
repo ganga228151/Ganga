@@ -8,7 +8,7 @@ export default function Navbar() {
                <Link to={"/"}> <h1 className="text-2xl font-bold">Home</h1></Link>
                 <Link to={"/gallery"}>Gallery</Link>
                 <Link to={"/video"}>Video</Link>
-                 <button className="bg-green-500 px-4 py-2 rounded text-white font-semibold"></button>
+                {/* {<button className="bg-green-500 px-4 py-2 rounded text-white font-semibold"> </button> } */}
             </div>
         </div>
     )
