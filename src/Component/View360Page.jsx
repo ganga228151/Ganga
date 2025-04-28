@@ -10,6 +10,9 @@ import image5 from "/Land img2.jpg";
 import image6 from "/Landimg3.jpg";
 import image7 from "/Landimg4.jpg";
 
+
+
+
 const highResImages = {
   'bora-bora': image,
   'poppy-field': image1,
@@ -19,6 +22,8 @@ const highResImages = {
   'Land2': image5,
   'Land3': image6,
   'Land4': image7,
+  
+  
 };
 
 export default function View360Page() {

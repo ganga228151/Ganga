@@ -8,6 +8,9 @@ import image4 from "/Land img.jpg";
 import image5 from "/Land img2.jpg";
 import image6 from "/Landimg3.jpg";
 import image7 from "/Landimg4.jpg";
+
+
+
 import { useContext } from 'react';
 import { SearchContext } from '../context/Searchcontext';
 
@@ -52,6 +55,7 @@ const images = [
     title: 'img4',
     thumbnail: image7,
   },
+  
 ];
 
 export default function GalleryPage() {

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import GalleryPage from './Component/GalleryPage';
 import GalleryPage2 from './Component/GalleryPage2';
 import View360Page from './Component/View360Page';
@@ -7,8 +7,15 @@ import Homepage from './Component/Homepage';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import { SearchContext } from './context/Searchcontext';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
+  return null;
+}
 function App() {
   const [searchTerm, setSearchTerm] = useState();
   const [isFetched, setIsFeched] = useState(false);
@@ -37,6 +44,7 @@ function App() {
 
 
         </Routes>
+        <ScrollToTop />
         <Footer />
       </SearchContext.Provider>
 
