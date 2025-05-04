@@ -4,6 +4,7 @@ import image from "/ram.png"
 import GalleryPage from "./GalleryPage";
 import GalleryPage2 from "./GalleryPage2";
 import { SearchContext } from "../context/Searchcontext";
+import ARview from "../component2/ARview";
 export default function Homepage() {
     const { setSearchTerm, isFetched, searchTerm } = useContext(SearchContext);
     useEffect(() => {
@@ -51,6 +52,7 @@ export default function Homepage() {
             </div>
             { <GalleryPage />}
             <GalleryPage2 />
+            <ARview/>
         </>
     );
 }

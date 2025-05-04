@@ -8,6 +8,7 @@ import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import { SearchContext } from './context/Searchcontext';
 import { useEffect, useState } from 'react';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {

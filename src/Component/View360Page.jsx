@@ -45,6 +45,7 @@ export default function View360Page() {
         vr-mode-ui="enabled: true"
         renderer="antialias: true; precision: high; colorManagement: true; toneMapping: reinhard; physicallyCorrectLights: true;"
       >
+        
         <a-assets>
           <img
             id="panorama"
@@ -63,7 +64,8 @@ export default function View360Page() {
         ></a-sky>
 
         <a-sound src="#bg-music" autoplay="true" loop="true" position="0 2 0"></a-sound>
-
+        
+  
         {/* Enable full 3D movement with camera rig */}
         <a-entity id="cameraRig" movement-controls position="0 1.6 0">
           <a-entity camera look-controls wasd-controls position="0 0 0"></a-entity>
